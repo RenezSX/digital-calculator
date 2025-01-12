@@ -1,5 +1,8 @@
 function appendToDisplay(value) {
     const display = document.getElementById('display');
+    if (display.value === 'Erro') {
+        display.value = '';
+}
     display.value += value;
 }
 
